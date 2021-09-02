@@ -16,23 +16,142 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /* VARIÁVEIS */
 :root{
-  
+	
 }
 
 /*BODY*/
-	body{
+	body {
+		background-color: #00002e;
+		font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+		color: white;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+    	align-content: center;
+    	align-items: center;
+	}
 
+	section {
+		display: flex;
+    	flex-direction: column;
+	}
+
+	.pg-home header h2 {
+		font-size: 30px;
+		font-weight: 800;
+	}
+
+	.pg-home ul {
+		padding: 0px;
+		margin-top: 40px;
+		display: flex;
+		flex-direction: column;
+    	flex-wrap: wrap;
+    	align-content: center;
+    	justify-content: center;
+		list-style: none;
+	}
+
+	.pg-home ul li {
+		margin: auto;
+		width: 186px;
+		height: 230px;
+		margin: 15px;
+	}
+
+	.pg-home ul li img {
+		max-width: 100%;
+  		height: auto;
+		margin-bottom: 15px;
+	}
+
+	.pg-home li:hover img{
+		border: 1px solid white;
+	}
+
+	.pg-home ul li figure figcaption {
+		display: none;		
+	}
+
+	.pg-home ul li h3 {
+		font-size: 20px;
+		font-weight: 800;	
+		margin-bottom: 15px;
+	}
+
+	.addPerfil figure {
+		margin-top: 25px;
+	}
+
+	.addPerfil figure img {
+		width: 65%;
+		height: auto;
+	}
+
+
+	h2 {
+		text-align: center;
+		font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
 	}
 
 /*TOPO*/
-	header.topo{
-		
+
+	header.topo {
+		margin-bottom: 20px;
 	}
 
+
+	.topo figure figcaption {
+		display: none;
+	}
+
+	.topo figure img {
+		max-width: 80%;
+  		height: auto;
+	}
+
+
 /*RODAPÉ*/
+	.pg-home footer button{
+		background-color: #00002e;
+		margin-top: 30px;
+		font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+		color: white;
+		font-size: 20px;
+		font-weight: 400;	
+		border: 2px solid white;
+		padding: 7px 12px 7px 12px;
+	}
 	
 
-/*PÁGINA INICIAL*/
-	div.pg-home{
-		
+	@media (min-width: 900px){
+		.pg-home ul{
+			width: 858px;
+			height: 290px;
+		}
+
+		.pg-home ul li img {
+			max-width: 80%;
+			height: auto;
+			margin-bottom: 15px;
+		}
+
+		.pg-home ul li {
+			margin: auto;
+			width: 186px;
+			height: 230px;
+			margin: 15px;
+		}
+
+	}
+
+	@media (min-width: 480px) and (max-width: 900px){
+		.pg-home ul{
+			width: 100%;
+			height: auto;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;		
+		}
+
 	}
