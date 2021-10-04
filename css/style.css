@@ -145,13 +145,18 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 	}
 
-	@media (min-width: 480px) and (max-width: 900px){
+	@media (min-width: 480px){
 		.pg-home ul{
 			width: 100%;
 			height: auto;
 			display: flex;
 			flex-direction: row;
 			flex-wrap: wrap;		
+		}
+
+		.topo {
+			width: 100%;
+			display: flex;
 		}
 
 	}
